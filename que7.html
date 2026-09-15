@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Property Listing Form</title>
+</head>
+<body>
+
+    <h1>Property Listing Form</h1>
+
+    <form action="#" method="post">
+
+        <label>Owner Name:</label>
+        <input type="text" name="owner_name" required><br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" required><br><br>
+
+        <label>Phone:</label>
+        <input type="tel" name="phone"><br><br>
+
+        <label>Property Type:</label>
+        <select name="property_type">
+            <option value="house">House</option>
+            <option value="apartment">Apartment</option>
+            <option value="plot">Plot</option>
+            <option value="commercial">Commercial</option>
+        </select><br><br>
+
+        <label>City:</label>
+        <input list="cities" name="city">
+        <datalist id="cities">
+            <option value="Islamabad">
+            <option value="Rawalpindi">
+            <option value="Lahore">
+            <option value="Karachi">
+        </datalist><br><br>
+
+        <label>Number of Bedrooms:</label>
+        <input type="number" name="bedrooms" min="0"><br><br>
+
+        <label>Price:</label>
+        <input type="number" name="price" min="0"><br><br>
+
+        <label>Property Availability Date:</label>
+        <input type="date" name="available_date"><br><br>
+
+        <label>Property Website URL:</label>
+        <input type="url" name="property_url"><br><br>
+
+        <label>Property Description:</label><br>
+        <textarea name="description" rows="5" cols="40"></textarea><br><br>
+
+        <label>Upload Property Images:</label>
+        <input type="file" name="images" multiple><br><br>
+
+        <label>Property Features:</label><br>
+        <input type="checkbox" name="features" value="parking"> Parking<br>
+        <input type="checkbox" name="features" value="garden"> Garden<br>
+        <input type="checkbox" name="features" value="security"> Security<br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>

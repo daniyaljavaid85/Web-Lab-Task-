@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel Room Booking Form</title>
+</head>
+<body>
+
+    <h1>Hotel Room Booking Form</h1>
+
+    <form action="#" method="post">
+
+        <label>Guest Name:</label>
+        <input type="text" name="guest_name" required><br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" required><br><br>
+
+        <label>Password:</label>
+        <input type="password" name="password" required><br><br>
+
+        <label>Number of Guests:</label>
+        <input type="number" name="num_guests" min="1"><br><br>
+
+        <label>Room Type:</label>
+        <select name="room_type">
+            <option value="single">Single</option>
+            <option value="double">Double</option>
+            <option value="suite">Suite</option>
+            <option value="deluxe">Deluxe</option>
+        </select><br><br>
+
+        <label>Additional Facilities:</label><br>
+        <input type="checkbox" name="facility" value="wifi"> Wi-Fi<br>
+        <input type="checkbox" name="facility" value="breakfast"> Breakfast<br>
+        <input type="checkbox" name="facility" value="parking"> Parking<br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female<br><br>
+
+        <label>Check-in Date:</label>
+        <input type="date" name="checkin_date"><br><br>
+
+        <label>Check-out Date:</label>
+        <input type="date" name="checkout_date"><br><br>
+
+        <label>Preferred Check-in Time:</label>
+        <input type="time" name="checkin_time"><br><br>
+
+        <label>Website/URL:</label>
+        <input type="url" name="website"><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+</html>

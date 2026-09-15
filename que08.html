@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Registration Form</title>
+</head>
+<body>
+
+    <h1>Music Festival Registration Form</h1>
+
+    <form action="#" method="post">
+
+        <label>Participant Name:</label>
+        <input type="text" name="participant_name" required><br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" required><br><br>
+
+        <label>Phone:</label>
+        <input type="tel" name="phone"><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female<br><br>
+
+        <label>Ticket Type:</label>
+        <select name="ticket_type">
+            <option value="regular">Regular</option>
+            <option value="vip">VIP</option>
+            <option value="student">Student</option>
+        </select><br><br>
+
+        <label>Number of Tickets:</label>
+        <input type="number" name="num_tickets" min="1"><br><br>
+
+        <label>Preferred Event Date:</label>
+        <input type="date" name="event_date"><br><br>
+
+        <label>Preferred Time:</label>
+        <input type="time" name="event_time"><br><br>
+
+        <label>Food Preference:</label><br>
+        <input type="radio" name="food" value="veg"> Vegetarian
+        <input type="radio" name="food" value="nonveg"> Non-Vegetarian<br><br>
+
+        <label>Additional Facilities:</label><br>
+        <input type="checkbox" name="facility" value="parking"> Parking<br>
+        <input type="checkbox" name="facility" value="seating"> VIP Seating<br>
+        <input type="checkbox" name="facility" value="camping"> Camping Area<br><br>
+
+        <label>Upload Identification Document:</label>
+        <input type="file" name="id_document"><br><br>
+
+        <label>Comments:</label><br>
+        <textarea name="comments" rows="5" cols="40"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+</html>
